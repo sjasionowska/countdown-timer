@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+    background-color: #0f0f46;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+
+#pageHeader > h1{
+    color: white;
+}
+
+#clock{
+/*    background-color: #00003b;*/
+    color: azure;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 30px;
+}
+
+
+#clock > div{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1a1a67;
+    /*TODO make it wider and responsive */
+    
+}
+
+#clock div > span{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(48, 104, 106, 0.62);
+    display: inline-block;
+}
+
+small{
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+
+input{
+    font-size: 1.5em;
+    margin: 25px;
+    padding: 5px;
+    background-color: #e7e7ff;
+}
