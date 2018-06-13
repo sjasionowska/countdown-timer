@@ -1,4 +1,4 @@
-//let countdown;
+let countdown;
 let timeInterval;
 const endDate = document.querySelector('input[name="endDate"]');
 const clock = document.querySelector('#clock');
@@ -6,26 +6,21 @@ const daysSpan = clock.querySelector('.days');
 const hoursSpan = clock.querySelector('.hours');
 const minutesSpan = clock.querySelector('.minutes');
 const secondsSpan = clock.querySelector('.seconds');
-//const savedTime = window.localStorage.getItem(countdown) || false;
+const savedTime = window.localStorage.getItem('countdown') || false;
 
-
-
-//if(savedTime){
-//    startClock(savedTime);
-//    let dated = new Date(savedTime);
-//    endDate.valueAsDate = dated;
-//}
-
-//FIXME localStorage.setItem doesn't work
-
+if(savedTime){
+    startClock(savedTime);
+    let dated = new Date(savedTime);
+    endDate.valueAsDate = dated;
+}
 
 endDate.addEventListener('change', function (e) {
     e.preventDefault();
     clearInterval(timeInterval);
 //    console.dir(this);
     const endDateTemp = new Date(this.value); //TODO change end time depeding on time zone
-//    window.localStorage.setItem('countdown', endDateTemp);
-//    console.log(window.localStorage.getItem(countdown));
+    window.localStorage.setItem('countdown', endDateTemp);
+    console.log(window.localStorage.getItem('countdown'));
     startClock(endDateTemp);
 });
 
