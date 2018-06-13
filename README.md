@@ -1,0 +1,2 @@
+# countdown-timer
+Countdown timer created with free Udemy course available on https://www.udemy.com/javascript-exercise-practice/learn/v4/content, created by Laurence Svekis. Part from the course is done, with small problem with LocalStorage. In the future I'll add basic holidays to choose like Christmas, Eastern etc., change end time depending on your time zone, change date input field to red if chosen date is in the past and make whole timer wider and responsive for mobile devices.
